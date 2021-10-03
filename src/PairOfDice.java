@@ -1,8 +1,6 @@
 
 public class PairOfDice 
 {
-	private static PairOfDice instance = new PairOfDice();
-
 	private final int MAX = 6;
 	private int faceValue1;
 	private int faceValue2;
@@ -10,11 +8,8 @@ public class PairOfDice
 	Die die1 = new Die();
 	Die die2 = new Die();
 
-	public static PairOfDice getInstance(){
-		return instance;
-	}
 	
-	private PairOfDice() {		
+	public PairOfDice() {		
 		faceValue1 = 1;
 		faceValue2 = 1;
 	}
